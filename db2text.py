@@ -46,7 +46,7 @@ def clean_txt(context):
 	# lower the english characaters
     context = context.lower()
     # remove punctuation
-    context = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）]+", "",context)
+    context = re.sub("[\s+\.\!\/_,$%^*(+\"\']+|[+——！，。？、~@#￥%……&*（）《》；：“”-]+", "",context)
     context = re.sub("[【】╮╯▽╰╭★→「」]+","",context)
     # remove wirte space
     context = re.sub("\s","",context)
